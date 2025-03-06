@@ -130,42 +130,7 @@ const Videos = () => {
 
     return (
         <div className='w-[93%] h-[100%]' >
-          <div className="w-[100%] h-[6vh] flex gap-2">
-           {
-            tagsArr.map((obj)=>{
-                return(
-                    <div className="px-[10px] py-[5px] text-center font-medium rounded-lg bg-[#272727] text-white">
-                    <p>{obj.tags}</p>
-                </div>
-                )
-            })
-           }
-          </div>
-          <div className="w-[100%] h-auto flex gap-3 flex-wrap mt-3">
-         {
-            videos.map((obj)=>{
-                return(
-                    <div className="w-[370px] h-[300px] ">
-                    <img className='w-[370px] h-[220px] rounded-lg' src={obj.thumbnail} alt="" />
-                    <div className="flex gap-2 mt-2">
-                        <div className="">
-                            <img className='w-[40px] h-[40px] rounded-full' src={obj.channelIcon} alt="" />
-                        </div>
-                        <div className="text-white">
-                            <h1 className='font-semibold'>{obj.title}</h1>
-                            <p className='text-[0.9rem] text-[#838383]'>{obj.channel}</p>
-                            <div className="flex gap-1 text-[#838383] text-[0.9rem]">
-                                <p >{obj.views} views</p>
-                                <p>.</p>
-                                <p>{obj.date} ago</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                )
-            })
-         }
-          </div>
+         
           
         </div>
     );
